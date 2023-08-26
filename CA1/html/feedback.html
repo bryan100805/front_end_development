@@ -1,0 +1,153 @@
+<!--Feedback Page-->
+<!--Asking Visitors of the Website to Share their Personal Information and Experience while Browsing through the Website-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="../css/feedback.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <nav id="horizontalNavigation" class="border1">
+            <h2 id="logo">&#120121;</h2>
+            <ul>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="career.html">Career Choices</a></li>
+                <li><a href="myjourney.html">My Journey in SP</a></li>
+                <li><a href="about.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 id="feedback" class="headings"><u>Feedback</u></h1>
+    <div id="description">
+        <p> Do you want to know more about me or SP? Any queries or feedback?
+            I love to hear from you, so don't hesitate to comment them today.
+            Your response help me to keep my website aesthetically pleasing for
+            my vistors. Check your e-mail inbox for the feedback results.<br><br>
+            Your personal information will be kept <i>private and confidential</i>.
+            Thank you for taking the time to respond to my survey.</p>
+        <p>Required values are marked by an asterisk (*)</p>
+    </div>
+    <form id="survey" action="http://www.example.com/bryantan/feedback" method="post">
+        <fieldset id="personalInfo">
+            <legend>Personal Information</legend>
+            <div class="feedbackRow">
+                <label for="name">Name* (max-characters: 25)</label>
+                <input name="visitorName" id="name" type="text" placeholder="Type your first name here..." maxlength="25" required/>
+            </div>
+
+            <div class="feedbackRow">
+                <label for="email">Email*</label> 
+                <input name="visitorEmail" id="email" type="email" placeholder="username@email.com" required/>
+            </div>
+
+            <div class="feedbackRow">
+                <label for="country">Country</label>
+                <select name="visitorCountry" id="country">
+                    <option value="country1">Australia</option>
+                    <option value="country2">Brunei</option>
+                    <option value="country3">China</option>
+                    <option value="country4">Japan</option>
+                    <option value="country5">Malaysia</option>
+                    <option value="country6">Indonesia</option>
+                    <option value="country7" selected>Singapore</option>
+                    <option value="country8">South Korea</option>
+                    <option value="country9">Thailand</option>
+                    <option value="country10">UK</option>
+                    <option value="country11">USA</option>
+                    <option value="country12">Others</option>
+                </select>
+            </div>
+
+            <div class="feedbackRow">
+                <label for="others">If you have selected Others, please type your country here</label>
+                <input name="others" id="others" type="text">
+            </div>
+
+            <div class="feedbackRow">
+                <label for="phone">Phone number</label>
+                <input name="visitorPhone" id="phone" type="tel" placeholder="example: nnnn-nnnn" pattern="[0-9]{4}-[0-9]{4}"/>
+            </div>
+
+            <div class="feedbackRow">
+                <label for="date">Date</label>
+                <input name="visitDate" id="date" type="date" />
+            </div>
+
+            <div class="feedbackBox">    
+                <label for="cAcquainted">Are you closely acquainted with Bryan? (Tick if it's Yes)</label>
+                <input name="cAcquainted" id="cAcquainted" value="yes" type="checkbox"/>
+            </div>
+        </fieldset>
+
+        <fieldset id="experience">
+            <legend>Share your Experience with Bryan</legend>
+            <div class="feedbackRow">
+                <label>Was the content in the website clear?</label>
+                <fieldset class="optGroup">
+                    <label for="cYes">Yes</label>
+                    <input name="cClear" id="cYes" value="yes" type="radio"/>
+                    <label for="cNo">No</label>
+                    <input name="cClear" id="cNo" value="no" type="radio"/>
+                </fieldset>
+            </div>
+
+            <div class="feedbackRow">
+                <label>Was the information in the website relevant for you?</label>
+                <fieldset class="optGroup">
+                    <label for="rYes">Yes</label>
+                    <input name="iRelevant" id="rYes" value="yes" type="radio"/>
+                    <label for="rNo">No</label>
+                    <input name="iRelevant" id="rNo" value="no" type="radio"/>
+                </fieldset>
+            </div>
+
+            <div class="feedbackRow">
+                <label for="subject">Subject (Please state what is the issue if you have chose Others)</label>
+                <input name="visitorSubject" id="subject" type="text" placeholder="Type the issue here..." list="subjectType"/>
+                <datalist id="subjectType">
+                    <option value="Unclear Content">
+                    <option value="Irrelevant Content">
+                    <option value="Inappropriate Content">
+                    <option value="Poor Aesthetic">
+                    <option value="Others">
+                </datalist>
+            </div>
+
+            <div class="feedbackBox">
+                <label for="commBox">Please Elaborate Below (max-characters: 350)</label>
+                <textarea name="visitorExp" id="commBox" placeholder="Please elaborate on the issue." maxlength="350"></textarea>
+            </div>
+
+            <div class="feedbackRow">
+                <label for="rangeBox">Rate the overall content of this website <br>
+                        (0=poor; 10=great)</label>
+                0
+                <input name="contentRate" id="rangeBox" type="range" value="5" step="1" min="0" max="10"/>
+                10
+            </div>
+        </fieldset>
+        
+        <div id="buttons">
+            <input type="submit" value="Submit Feedback" />
+            <input type="reset" value="Cancel" />
+        </div>
+    </form>
+    <footer class="border1">
+        <address>
+            &#9993; bryantan100895@gmail.com &#8226; &#9743; +65 8423 2957
+            &#8226; Follow Me on Instagram <i class="fa">&#xf16d;</i>: @bryan100805 <br>
+            &#169; by Bryan Tan. All rights reserved.
+        </address>
+    </footer>
+</body>
+
+</html>

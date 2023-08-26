@@ -1,0 +1,28 @@
+/*Carousel Styles*/
+div.carousel-caption{
+    backdrop-filter: blur(8px);
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px #7395AE, 0 0 5px #95adc5;
+}
+
+div#carousel_photos {
+    height: 75%;
+    width: auto;
+}
+
+/*Background Styles*/
+div#photo_box1{
+    box-shadow: rgb(51, 51, 51) 0px 0px 5px;
+    backdrop-filter: blur(4px)
+}
+
+div#photo_box1 > h3{
+    text-shadow: 2px 2px 4px #F0F2F0;
+}
+
+div#photo_box2{
+    box-shadow: rgb(51, 51, 51) 0px 0px 5px,
+                rgb(51, 51, 51) 0px 0px 5px;
+    background: linear-gradient(345deg, #F0F2F0,
+                             #000C40 80%);
+}

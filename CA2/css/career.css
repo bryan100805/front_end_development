@@ -1,0 +1,13 @@
+/*Headings Style*/
+div#heading2{
+    backdrop-filter: blur(8px);
+}
+
+div#heading2 > h2{
+    text-shadow: 2px 2px 4px #F0F2F0;
+}
+
+/*Card Styles*/
+div.card{
+    box-shadow: 15px 15px #000C40;
+}

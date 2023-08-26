@@ -1,0 +1,230 @@
+@charset "utf-8";
+
+/* HTML Styles */
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+}
+
+/* Body Styles */
+body {
+   background-color: #0B0C10;
+   width: 100%;   
+   height:100%;
+   margin-left: 1em;
+   margin-right: 1em;
+}
+
+/* Navigation, Aside & Footer Styles */
+.border1 {
+   background-color: #1F2833;
+   padding: 5px;
+   text-align: center;
+   font-size: 15px;
+}
+
+/* Navigation Styles */
+#horizontalNavigation {
+	background: #1F2833;
+	color: #45A29E;
+	height: 45px;
+	padding-right: 18px;
+	border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+#horizontalNavigation ul, #horizontalNavigation li , #logo{
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+#horizontalNavigation ul {
+	width: 100%;
+}
+#horizontalNavigation li {
+	float: right;
+	display: inline;
+	position: relative;
+}
+#horizontalNavigation a{
+	display: block;
+	line-height: 45px;
+	padding: 0 12px;
+	text-decoration: none;
+	color: #C5C6C7;
+	font-size: 16px;
+}
+
+#logo{
+	display: block;
+	line-height: 45px;
+	padding: 0 12px;
+}
+
+#horizontalNavigation li a:hover {
+	color: #66FCF1;
+}
+
+#horizontalNavigation label {
+	display: none;
+	line-height: 45px;
+	text-align: center;
+	position: absolute;
+}
+#horizontalNavigation label:before {
+	font-size: 1.6em;
+	content: "\2261"; 
+	margin-right: 15px;
+}
+
+/* Typography */
+p{
+	vertical-align: top;
+    list-style-type: none;
+}
+
+body {
+	font-family: 'Times New Roman', Times, serif;
+	color: #ffffff;
+    line-height: 1;
+}
+
+/* Headings Styles */
+.headings {
+	color:#95adc5;
+}
+h1#journey {
+	font-size: xx-large;
+    margin-left: 1em;
+}
+
+/* Left Column Styles */
+section#leftColumn {
+    background-color: #1F2833;
+    padding: 1em;
+    margin-left: 1em;
+}
+
+/* Right Column Styles */
+#image2 {
+	width:600px;
+	height: auto;
+    margin-right: 1em;
+}
+
+/* Article Styles */
+img.images3{
+    width: 250px;
+    height: auto;
+}
+article#courses{
+    background-color: #1F2833;
+}
+
+article#courses > div {
+    margin-block-start: 0%;
+    margin-top: -23px;
+}
+
+/* Grid Styles for Page Body*/
+body {
+	margin-left:0%;
+	margin-right:0%;
+	display: grid;
+	width: 100%;
+	height: 100%;
+    grid-template-columns: 6fr auto;
+    grid-template-areas:"nav nav"
+                        "journey journey"
+                        "text img"
+                        "main main"
+                        "footer footer";
+    grid-gap: 1em;
+}
+
+section#leftColumn {
+	display: grid;
+}
+
+header {
+	grid-area: nav;
+}
+
+footer.border1 {
+	grid-area: footer;
+	justify-self: auto;
+	align-self: auto;
+}
+
+img {
+	grid-area: img;
+}
+
+h1#journey {
+	grid-area: journey;
+}
+
+#journey::after {
+	content: "";
+	clear: both;
+}
+
+section#leftColumn {
+	grid-area: text;
+}
+
+article#courses {
+    grid-area: main;
+}
+
+/* Grid Styles for Nested Grid */
+article#courses {
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr 4fr;
+    grid-template-areas: "head head head head"
+                         "DAAA description1 DISM description2"
+                         "DIT description3 DCTIP description4";
+    padding-left: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    grid-gap: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+article#courses > h2{
+    grid-area: head;
+}
+
+article#courses > img#DAAA{
+    grid-area: DAAA;
+}
+
+article#courses > p#description1 {
+    grid-area: description1;
+}
+
+article#courses > img#DISM{
+    grid-area: DISM;
+}
+
+article#courses > p#description2 {
+    grid-area: description2;
+}
+
+article#courses > img#DIT{
+    grid-area: DIT;
+}
+
+article#courses > p#description3 {
+    grid-area: description3;
+}
+
+article#courses > img#DCTIP{
+    grid-area: DCTIP;
+}
+
+article#courses > div#description4 {
+    grid-area: description4;
+}

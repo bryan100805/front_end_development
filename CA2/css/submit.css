@@ -1,0 +1,10 @@
+/*Applies for only submit.html*/
+
+/*Background Image Styles*/
+body{
+    background-image: url(../images/Background_Photo.jpg);
+}
+
+div#thank_you > p{
+    backdrop-filter: blur(8px);
+}

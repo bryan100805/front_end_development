@@ -1,0 +1,171 @@
+<!--My Journey in SP Page-->
+<!--Sharing about My Experience in SP, My 2 CCAs, Introduction of 4 Courses in SOC (Features)-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Journey in SP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/myjourney.css">
+    <link rel="stylesheet" href="../css/figure.css">
+    <script src="../js/myjourney.js" defer></script>
+</head>
+
+<body>
+    <!--Navigation System Style-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">&#120121;</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-item nav-link" href="index.html">About Me</a>
+                    <a class="nav-item nav-link active" aria-current="page" href="myjourney.html">My Journey in SP</a>
+                    <a class="nav-item nav-link" href="career.html">Career Choices</a>
+                    <a class="nav-item nav-link" href="feedback.html">Feedback</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Title of webpage-->
+    <div class="container-fluid bg-body">
+        <p class='display-3' id="header2"></p>
+    </div>
+
+    <!--My Experience In SP, Photo of my CCA-->
+    <div class="container bg-secondary mb-4 py-4 px-4">
+        <div class="row">
+            <div class="col-lg-5">
+                <h2><u>My Experience in SP</u></h2>
+                <p>
+                    When I just started studying in SP, it was quite scary as it was a <i>completely new environment</i> for me.
+                    My lecturers, my classmates, the classrooms and even the foodcourts were all different to me compared to in Secondary School. 
+                    Workload in School of Computing was also very overwhelming. However, this quickly took a big turn 
+                    as I managed to make a few friends in my class and also catch up in my studies. I even joined 2 CCAs, <mark>Muay
+                    Thai</mark>, where I learnt different combat techniques, both attacking and defence, & my other cca, <mark>SPAI</mark> , where I
+                    learn additional AI and programming skills and content to get me more familiar on the topic of AI. This allowed me to socialise
+                    with people from other schools and different years in SP, like School of Engineering and School of Media, Arts and 
+                    Design. I would say that SP offers a lot of food options across the campus, they have 6 food courts, 2 cafes and
+                    even an Old Chang Kee food truck, which means that I will never run out of food choices to eat. One of the food court even
+                    has a Starbucks. <br><br>
+                    I would say one thing that stand out to me in SP compared to in secondary school is that <i>everything need to
+                     be done independently</i>. For example, I need to keep track of all of my homework by myself, without any reminders from the teachers/lecturers.
+                </p>
+            </div>
+            <div class="col-lg-7 px-3 py-3">
+                <figure>
+                    <img class="image-fluid w-100 h-100 rounded" src="../images/Muay_Thai.jpg" alt="Muay Thai CCA">
+                    <figcaption>Muay Thai CCA in SP</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <!--Display the time now and the countdown till the end of Sem 1-->
+    <div class="container px-4 py-4 my-4" id="sem1_countdown">
+        <div class="row bg-body">
+            <h3 id="timeHeading" class="pt-4 px-4 display-6"><u>Current Time:</u></h3>
+            <div class="d-flex flex-row px-4 display-7" id="dateNow">26/7/2022<br/>9:00:02 p.m.</div>
+            <div class="text-center lead"><p>Countdown Till End of Semester 1: </p></div>
+            <div class="d-flex justify-content-center lead pb-4" id="countdown">
+                <div><span id="days">38</span>day(s):</div>
+                <div><span id="hrs">50</span>hr(s):</div>
+                <div><span id="mins">10</span>min(s):</div>
+                <div><span id="secs">48</span>sec(s)</div>
+            </div>
+        </div>
+    </div>
+
+    <!--Monthly Timetable for This Month-->
+    <div class="container bg-light rounded py-4 mb-4" id="timetable_rounded">
+        <h3 class="bg-light"><b><u>Monthly Schedule: </u></b></h3>
+        <div class="table-responsive" id="timetable"></div>  
+    </div>
+
+
+    <!--Title of Next Section-->
+    <div class="container px-4 py-4" id="heading1">
+        <h2>Courses in SOC:</h2>
+    </div>
+
+    <!--Description of Some Courses in SOC-->
+    <div class="container rounded" id="courses">
+        <div class="row py-4 mb-4 mx-3 justify-content-around">
+            <div class="card col-sm-11 col-md-5 col-lg-3 mb-4">
+                <img class="img-fluid rounded card-img-top py-3" src="../images/DAAA.jpg" alt="Photo of DAAA">
+                <div class="card-body">
+                    <h3 class="card-title"><u>DAAA</u></h3>
+                    <div class="card-text">
+                        <p>From <b>Siri to Google Home and online chatbots</b>, data analytics and AI make it possible for devices and programmes 
+                        to respond to us in an almost human-like manner. Diploma in Applied AI & Analytics (DAAA) offers modules like Data Engineering,
+                        <i>Machine Learning and Deep Learning</i>
+                        <br><br> The lab is equipped with <i>AI Deep Learning servers</i> capable of handling heavy lifting machine learning task.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-11 col-md-5 col-lg-3 mb-4">
+                <img class="img-fluid rounded card-img-top py-3" src="../images/DISM.jpg" alt="Photo of DISM">
+                <div class="card-body">
+                    <h3 class="card-title"><u>DISM</u></h3>
+                    <div class="card-text">
+                        <p>The threat has never been so real. The more we rely on the Internet to store and manage important information, the more we
+                        need to <i>keep it safe from cybercriminals</i>. Diploma in Infocomm Security Management (DISM) students can can look forward to an 
+                        interesting curriculum that covers <b>offensive attacks, defensive methods and investigative skills</b>.<br><br>DISM curriculum covers 
+                        the important areas of <i>security technology, security management and information technology</i>. 
+                        Cyber Wargame Centre is even created to <i>simulate a real life Hacker
+                        vs Security Analyst scenario</i>, in which students will try to prevent these cyberthreats from occuring.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-11 col-md-5 col-lg-3 mb-4">
+                <img class="img-fluid rounded card-img-top py-3" src="../images/DIT.jpg" alt="Photo of DIT">
+                <div class="card-body">
+                    <h3 class="card-title"><u>DIT</u></h3>
+                    <div class="card-text">
+                        <p>Information Technology (IT) is the driving force behind many <i>digital transformations</i> we see and use today, including the Smart Nation vision.
+                        In Singapore, there is a strong demand for IT professionals in <b>Software Development and User Experience (UX) design, and in Immersive Simulation
+                         Technologies such as Augmented and Virtual Reality</b>. Diploma in Information Technology (DIT) focus on Software & Applications development such as
+                        <i>Software Development, User Experience (UX) & Immersive Simulation</i>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-11 col-md-5 col-lg-3 mb-4">
+                <img class="img-fluid rounded card-img-top py-3" src="../images/DCITP.jpg" alt="Photo of DCTIP">
+                <div class="card-body">
+                    <h3 class="card-title"><u>DCTIP</u></h3>
+                    <div class="card-text">
+                        <p> The Common ICT Programme (DCITP) is designed to help students to make an informed choice if they are <i>unsure about what IT courses</i> they need to
+                            take.<br><br> At the end of the year 1 semester 1, they will be able make an <i>informed choice in selecting one of the three IT courses</i> that you wish to pursue: </p>
+                        <ol>
+                            <li>Diploma in Applied AI & Analytics <br>(DAAA - S30)</li>
+                            <li>Diploma in Information Technology <br>(DIT - S69)</li>
+                            <li>Diploma in Infocomm Security Management (DISM - S54)</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer Style-->
+    <div class="container-fluid mx-0 px-0 footer">
+        <div class="text-center mx-0 my-0 px-0 py-0 no-gutters">
+            <i class="bi bi-envelope"></i> bryantan100895@gmail.com &#8226; <i class="bi bi-telephone"></i> +65 8423 2957 
+            &#8226; Follow Me on Instagram <i class="bi bi-instagram"></i>: <i class="bi bi-at"></i>bryan100805 <br>
+            &#169; by Bryan Tan. All rights reserved.
+        </div>
+    </div>
+</body>
+
+</html>

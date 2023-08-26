@@ -1,0 +1,39 @@
+/*Applies to all pages of the websites except for submit.html*/
+
+/*Background Image Styles*/
+body{
+    background-image: url(../images/Background_Photo.jpg);
+    background-repeat: round;
+}
+
+/*Figure and Figure Captions Styles*/
+figure {
+    border: 1px solid #1F2833;
+    border-width: 25px;
+    border-style: outset;
+    margin: 20px auto 0px;
+    width: 80%;
+    box-shadow: 10px 10px 5px #B0C4DE;
+}
+
+figure figcaption {
+    background-color: white;
+    font-family: 'Palatino Linotype', 'Palatino',
+                 'Times New Roman', 'serif';
+    font-style: italic;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/*Footer Styles*/
+div.footer{
+    background: radial-gradient(#bdc3c7,#2c3e50,#000C40);
+    border: 4px double #002147;
+}
+
+div.footer > div{
+    font-family: 'Mrs Eaves';
+    backdrop-filter: blur(8px);
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(92, 157, 203), 0 0 5px rgba(46, 46, 92, 0.533);
+}

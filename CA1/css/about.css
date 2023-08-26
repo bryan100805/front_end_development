@@ -1,0 +1,239 @@
+@charset "utf-8";
+
+/* HTML Styles */
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+}
+
+/* Body Styles */
+body {
+   background-color: #0B0C10;
+   width: 100%;   
+   height:100%;
+   margin-left: 1em;
+   margin-right: 1em;
+}
+
+/* Navigation, Aside & Footer Styles */
+.border1 {
+   background-color: #1F2833;
+   padding: 5px;
+   text-align: center;
+   font-size: 15px;
+}
+
+/* Navigation Styles */
+#horizontalNavigation {
+	background: #1F2833;
+	color: #45A29E;
+	height: 45px;
+	padding-right: 18px;
+	border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+#horizontalNavigation ul, #horizontalNavigation li , #logo{
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+#horizontalNavigation ul {
+	width: 100%;
+}
+#horizontalNavigation li {
+	float: right;
+	display: inline;
+	position: relative;
+}
+#horizontalNavigation a{
+	display: block;
+	line-height: 45px;
+	padding: 0 12px;
+	text-decoration: none;
+	color: #C5C6C7;
+	font-size: 16px;
+}
+
+#logo{
+	display: block;
+	line-height: 45px;
+	padding:0 12px;
+}
+
+#horizontalNavigation li a:hover {
+	color: #66FCF1;
+}
+
+#horizontalNavigation label {
+	display: none;
+	line-height: 45px;
+	text-align: center;
+	position: absolute;
+}
+
+#horizontalNavigation label:before {
+	font-size: 1.6em;
+	content: "\2261"; 
+	margin-right: 15px;
+}
+
+/* Typography */
+p{
+	vertical-align: top;
+	list-style-type: none;
+}
+
+body {
+	font-family: 'Times New Roman', Times, serif;
+	color: #ffffff;
+	line-height: 1;
+}
+
+/* Headings Styles */
+.headings{
+	color:#95adc5;
+}
+
+h1#about{
+	font-size: xx-large;
+	margin-left: 1em;
+}
+
+h1#about::after {
+	content: "";
+	clear: both;
+}
+
+/* Left Column Styles */
+#image1{
+	width: 450px;
+	height: auto;
+}
+
+/* Right Column Styles */
+section#rightColumn {
+   background-color: #1F2833;
+   padding: 1em;
+}
+
+/* Article Styles */
+.myValues {
+	background-color: #1F2833;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin-left: 1em;
+}
+
+/*Aside Styles*/
+aside>dl>dt {
+	color:#95adc5;
+}
+
+aside > dl {
+	text-align: left;
+}
+
+aside{
+	justify-content: space-evenly;
+}
+/* List Styles */
+.myValues > ul > li {
+   padding-left: 2%;
+}
+
+::marker {
+	color: #7395AE;
+	content: '\2192';
+}
+
+/* Footer Styles */
+footer.border1 {
+	justify-self: auto;
+	align-self: auto;
+}
+
+/* Flower Image Style */
+div#photosMPT {
+	align-items: center;
+}
+
+div#photosMPT > img {
+	width: auto;
+	height: 350px;
+	padding-top: 3em;
+}
+
+img#flower {
+	padding-left: 2em;
+}
+
+/* Grid Styles for Page Body*/
+body {
+	margin-left:0%;
+	margin-right:0%;
+	display: grid;
+	width: 100%;
+	height: 100%;
+	grid-template-columns: auto 6fr 2fr;
+	grid-template-areas: "nav nav nav"
+						 "about about faq"
+						 "img text faq"
+						 "main main faq"
+						 "footer footer footer";
+	grid-gap: 1em;
+}
+ 
+section#rightColumn {
+	display: grid;
+	grid-area: text;
+}
+ 
+img {
+	grid-area: img;
+}
+ 
+header {
+	grid-area: nav;
+}
+ 
+h1#about {
+	grid-area: about;
+}
+ 
+aside.border1 {
+	grid-area: faq;
+}
+ 
+article.myValues {
+	grid-area: main;
+}
+
+footer.border1{
+	grid-area: footer;
+}
+
+/* Nested Grid Styles */
+article.myValues {
+	display: grid;
+	grid-template-columns: 3fr auto;
+	grid-template-areas: "values flower"
+						 "cca cca";
+	grid-gap: 1em;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-bottom: 2em;
+}
+
+div#values {
+	grid-area: values;
+}
+
+div#photosMPT {
+	grid-area: flower;
+}
+
+div#pastCCAs {
+	grid-area: cca;
+}

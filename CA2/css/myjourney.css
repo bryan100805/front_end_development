@@ -1,0 +1,44 @@
+/*Calendar Borders Styles*/
+div#timetable_rounded{
+    box-shadow: rgb(51, 51, 51) 0px 0px 1px,
+                rgb(51, 51, 51) 0px 0px 5px, 
+                rgb(51, 51, 51) 0px 0px 10px,
+                rgb(51, 51, 51) 0px 0px 20px;
+}
+
+td#schedule_today{
+    border: 1px solid black;
+    background: linear-gradient(165deg, #71C5EE,
+                            #025091 80%);
+}
+
+th#timetable_weekdays{
+    border-bottom: 3px solid gray;
+}
+
+td.schedule_dates{
+    border: 1px solid black;
+}
+
+/*Countdown Boxes Styles*/
+div#sem1_countdown{
+    background: linear-gradient(165deg, #F0F2F0,#000C40 80%);
+}
+
+/*Heading Styles*/
+div#heading1{
+    backdrop-filter: blur(8px);
+}
+
+div#heading1 > h2{
+    text-shadow: 2px 2px 4px #F0F2F0;
+}
+
+/*Card Styles*/
+div#courses {
+    border-radius: 20px;
+}
+
+div.card{
+    box-shadow: 10px 10px #000C40;
+}
